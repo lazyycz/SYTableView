@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4528F5BC9B24C55C4D4D9B83 /* libPods-SYTableViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BF4EEC874F8F6D3ED152ABD /* libPods-SYTableViewDemo.a */; };
 		EF04A20A209C2E3400AEEF88 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A209209C2E3400AEEF88 /* AppDelegate.m */; };
-		EF04A20D209C2E3400AEEF88 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A20C209C2E3400AEEF88 /* ViewController.m */; };
-		EF04A210209C2E3400AEEF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF04A20E209C2E3400AEEF88 /* Main.storyboard */; };
 		EF04A212209C2E3900AEEF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF04A211209C2E3900AEEF88 /* Assets.xcassets */; };
 		EF04A215209C2E3900AEEF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF04A213209C2E3900AEEF88 /* LaunchScreen.storyboard */; };
 		EF04A218209C2E3900AEEF88 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A217209C2E3900AEEF88 /* main.m */; };
-		EF04A222209C2E3900AEEF88 /* SYTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A221209C2E3900AEEF88 /* SYTableViewDemoTests.m */; };
-		EF04A22D209C2E3900AEEF88 /* SYTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A22C209C2E3900AEEF88 /* SYTableViewDemoUITests.m */; };
+		EF04A245209C2FFA00AEEF88 /* SYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A243209C2FFA00AEEF88 /* SYTableViewController.m */; };
+		EF04A248209C308700AEEF88 /* SYTableRow.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A247209C308700AEEF88 /* SYTableRow.m */; };
+		EF04A24B209C32D300AEEF88 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04A24A209C32D300AEEF88 /* CoreFoundation.framework */; };
+		EF04A24D209C32EC00AEEF88 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF04A24C209C32EC00AEEF88 /* CoreGraphics.framework */; };
+		EF04A250209C3C0300AEEF88 /* SYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A24F209C3C0300AEEF88 /* SYTableViewCell.m */; };
+		EF04A253209C431100AEEF88 /* SYTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A252209C431100AEEF88 /* SYTableViewHeaderFooterView.m */; };
+		EF04A256209C58D500AEEF88 /* SYTableViewControllerDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A255209C58D500AEEF88 /* SYTableViewControllerDataFactory.m */; };
+		EF04A25B209C5A8900AEEF88 /* SYStoreInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A25A209C5A8900AEEF88 /* SYStoreInfoTableViewCell.m */; };
+		EF04A289209C676900AEEF88 /* SYTableViewControllerRow.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A288209C676900AEEF88 /* SYTableViewControllerRow.m */; };
+		EF04A28C209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A28B209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m */; };
+		EF04A28F20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A28E20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m */; };
+		EF04A29220A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A29120A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +44,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BF4EEC874F8F6D3ED152ABD /* libPods-SYTableViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SYTableViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAA8909A495E63508F862B7B /* Pods-SYTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYTableViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYTableViewDemo/Pods-SYTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EF04A205209C2E3400AEEF88 /* SYTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF04A208209C2E3400AEEF88 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EF04A209209C2E3400AEEF88 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EF04A20B209C2E3400AEEF88 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EF04A20C209C2E3400AEEF88 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EF04A20F209C2E3400AEEF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF04A211209C2E3900AEEF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF04A214209C2E3900AEEF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF04A216209C2E3900AEEF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF04A217209C2E3900AEEF88 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF04A21D209C2E3900AEEF88 /* SYTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF04A221209C2E3900AEEF88 /* SYTableViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableViewDemoTests.m; sourceTree = "<group>"; };
-		EF04A223209C2E3900AEEF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF04A228209C2E3900AEEF88 /* SYTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SYTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF04A22C209C2E3900AEEF88 /* SYTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableViewDemoUITests.m; sourceTree = "<group>"; };
-		EF04A22E209C2E3900AEEF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF04A243209C2FFA00AEEF88 /* SYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SYTableViewController.m; sourceTree = "<group>"; };
+		EF04A244209C2FFA00AEEF88 /* SYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYTableViewController.h; sourceTree = "<group>"; };
+		EF04A246209C308700AEEF88 /* SYTableRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableRow.h; sourceTree = "<group>"; };
+		EF04A247209C308700AEEF88 /* SYTableRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableRow.m; sourceTree = "<group>"; };
+		EF04A24A209C32D300AEEF88 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EF04A24C209C32EC00AEEF88 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF04A24E209C3C0300AEEF88 /* SYTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableViewCell.h; sourceTree = "<group>"; };
+		EF04A24F209C3C0300AEEF88 /* SYTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableViewCell.m; sourceTree = "<group>"; };
+		EF04A251209C431100AEEF88 /* SYTableViewHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		EF04A252209C431100AEEF88 /* SYTableViewHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		EF04A254209C58D500AEEF88 /* SYTableViewControllerDataFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableViewControllerDataFactory.h; sourceTree = "<group>"; };
+		EF04A255209C58D500AEEF88 /* SYTableViewControllerDataFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableViewControllerDataFactory.m; sourceTree = "<group>"; };
+		EF04A259209C5A8900AEEF88 /* SYStoreInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYStoreInfoTableViewCell.h; sourceTree = "<group>"; };
+		EF04A25A209C5A8900AEEF88 /* SYStoreInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYStoreInfoTableViewCell.m; sourceTree = "<group>"; };
+		EF04A285209C5F4200AEEF88 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		EF04A287209C676900AEEF88 /* SYTableViewControllerRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYTableViewControllerRow.h; sourceTree = "<group>"; };
+		EF04A288209C676900AEEF88 /* SYTableViewControllerRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYTableViewControllerRow.m; sourceTree = "<group>"; };
+		EF04A28A209FF95900AEEF88 /* SYGoodsInfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGoodsInfoTableViewCell.h; sourceTree = "<group>"; };
+		EF04A28B209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGoodsInfoTableViewCell.m; sourceTree = "<group>"; };
+		EF04A28D20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYStoreInfoTableViewHeaderView.h; sourceTree = "<group>"; };
+		EF04A28E20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYStoreInfoTableViewHeaderView.m; sourceTree = "<group>"; };
+		EF04A29020A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGoodsInfoTableViewHeaderView.h; sourceTree = "<group>"; };
+		EF04A29120A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGoodsInfoTableViewHeaderView.m; sourceTree = "<group>"; };
+		F5E28B958B34CC370DCBE34A /* Pods-SYTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYTableViewDemo/Pods-SYTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF04A24D209C32EC00AEEF88 /* CoreGraphics.framework in Frameworks */,
+				EF04A24B209C32D300AEEF88 /* CoreFoundation.framework in Frameworks */,
+				4528F5BC9B24C55C4D4D9B83 /* libPods-SYTableViewDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +109,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DC9F69B6386B65978234AD4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F5E28B958B34CC370DCBE34A /* Pods-SYTableViewDemo.debug.xcconfig */,
+				EAA8909A495E63508F862B7B /* Pods-SYTableViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EF04A1FC209C2E3400AEEF88 = {
 			isa = PBXGroup;
 			children = (
 				EF04A207209C2E3400AEEF88 /* SYTableViewDemo */,
-				EF04A220209C2E3900AEEF88 /* SYTableViewDemoTests */,
-				EF04A22B209C2E3900AEEF88 /* SYTableViewDemoUITests */,
 				EF04A206209C2E3400AEEF88 /* Products */,
+				EF04A249209C32D200AEEF88 /* Frameworks */,
+				4DC9F69B6386B65978234AD4 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,35 +141,85 @@
 		EF04A207209C2E3400AEEF88 /* SYTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EF04A241209C2FFA00AEEF88 /* TableRow */,
+				EF04A242209C2FFA00AEEF88 /* ViewController */,
 				EF04A208209C2E3400AEEF88 /* AppDelegate.h */,
 				EF04A209209C2E3400AEEF88 /* AppDelegate.m */,
-				EF04A20B209C2E3400AEEF88 /* ViewController.h */,
-				EF04A20C209C2E3400AEEF88 /* ViewController.m */,
-				EF04A20E209C2E3400AEEF88 /* Main.storyboard */,
 				EF04A211209C2E3900AEEF88 /* Assets.xcassets */,
 				EF04A213209C2E3900AEEF88 /* LaunchScreen.storyboard */,
 				EF04A216209C2E3900AEEF88 /* Info.plist */,
 				EF04A217209C2E3900AEEF88 /* main.m */,
+				EF04A285209C5F4200AEEF88 /* PrefixHeader.pch */,
 			);
 			path = SYTableViewDemo;
 			sourceTree = "<group>";
 		};
-		EF04A220209C2E3900AEEF88 /* SYTableViewDemoTests */ = {
+		EF04A241209C2FFA00AEEF88 /* TableRow */ = {
 			isa = PBXGroup;
 			children = (
-				EF04A221209C2E3900AEEF88 /* SYTableViewDemoTests.m */,
-				EF04A223209C2E3900AEEF88 /* Info.plist */,
+				EF04A246209C308700AEEF88 /* SYTableRow.h */,
+				EF04A247209C308700AEEF88 /* SYTableRow.m */,
+				EF04A24E209C3C0300AEEF88 /* SYTableViewCell.h */,
+				EF04A24F209C3C0300AEEF88 /* SYTableViewCell.m */,
+				EF04A251209C431100AEEF88 /* SYTableViewHeaderFooterView.h */,
+				EF04A252209C431100AEEF88 /* SYTableViewHeaderFooterView.m */,
 			);
-			path = SYTableViewDemoTests;
+			path = TableRow;
 			sourceTree = "<group>";
 		};
-		EF04A22B209C2E3900AEEF88 /* SYTableViewDemoUITests */ = {
+		EF04A242209C2FFA00AEEF88 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				EF04A22C209C2E3900AEEF88 /* SYTableViewDemoUITests.m */,
-				EF04A22E209C2E3900AEEF88 /* Info.plist */,
+				EF04A286209C673E00AEEF88 /* Row */,
+				EF04A257209C5A1A00AEEF88 /* Cell */,
+				EF04A258209C5A1A00AEEF88 /* HeaderFooter */,
+				EF04A244209C2FFA00AEEF88 /* SYTableViewController.h */,
+				EF04A243209C2FFA00AEEF88 /* SYTableViewController.m */,
+				EF04A254209C58D500AEEF88 /* SYTableViewControllerDataFactory.h */,
+				EF04A255209C58D500AEEF88 /* SYTableViewControllerDataFactory.m */,
 			);
-			path = SYTableViewDemoUITests;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		EF04A249209C32D200AEEF88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF04A24C209C32EC00AEEF88 /* CoreGraphics.framework */,
+				EF04A24A209C32D300AEEF88 /* CoreFoundation.framework */,
+				1BF4EEC874F8F6D3ED152ABD /* libPods-SYTableViewDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF04A257209C5A1A00AEEF88 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EF04A259209C5A8900AEEF88 /* SYStoreInfoTableViewCell.h */,
+				EF04A25A209C5A8900AEEF88 /* SYStoreInfoTableViewCell.m */,
+				EF04A28A209FF95900AEEF88 /* SYGoodsInfoTableViewCell.h */,
+				EF04A28B209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF04A258209C5A1A00AEEF88 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				EF04A28D20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.h */,
+				EF04A28E20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m */,
+				EF04A29020A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.h */,
+				EF04A29120A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		EF04A286209C673E00AEEF88 /* Row */ = {
+			isa = PBXGroup;
+			children = (
+				EF04A287209C676900AEEF88 /* SYTableViewControllerRow.h */,
+				EF04A288209C676900AEEF88 /* SYTableViewControllerRow.m */,
+			);
+			path = Row;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +229,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF04A231209C2E3900AEEF88 /* Build configuration list for PBXNativeTarget "SYTableViewDemo" */;
 			buildPhases = (
+				09593A3FD759D37A6A7184A0 /* [CP] Check Pods Manifest.lock */,
 				EF04A201209C2E3400AEEF88 /* Sources */,
 				EF04A202209C2E3400AEEF88 /* Frameworks */,
 				EF04A203209C2E3400AEEF88 /* Resources */,
@@ -237,7 +328,6 @@
 			files = (
 				EF04A215209C2E3900AEEF88 /* LaunchScreen.storyboard in Resources */,
 				EF04A212209C2E3900AEEF88 /* Assets.xcassets in Resources */,
-				EF04A210209C2E3400AEEF88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +347,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09593A3FD759D37A6A7184A0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SYTableViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EF04A201209C2E3400AEEF88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF04A20D209C2E3400AEEF88 /* ViewController.m in Sources */,
+				EF04A28C209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m in Sources */,
+				EF04A25B209C5A8900AEEF88 /* SYStoreInfoTableViewCell.m in Sources */,
+				EF04A289209C676900AEEF88 /* SYTableViewControllerRow.m in Sources */,
+				EF04A253209C431100AEEF88 /* SYTableViewHeaderFooterView.m in Sources */,
+				EF04A28F20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m in Sources */,
+				EF04A245209C2FFA00AEEF88 /* SYTableViewController.m in Sources */,
+				EF04A250209C3C0300AEEF88 /* SYTableViewCell.m in Sources */,
 				EF04A218209C2E3900AEEF88 /* main.m in Sources */,
+				EF04A29220A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m in Sources */,
+				EF04A256209C58D500AEEF88 /* SYTableViewControllerDataFactory.m in Sources */,
 				EF04A20A209C2E3400AEEF88 /* AppDelegate.m in Sources */,
+				EF04A248209C308700AEEF88 /* SYTableRow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +392,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF04A222209C2E3900AEEF88 /* SYTableViewDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +399,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF04A22D209C2E3900AEEF88 /* SYTableViewDemoUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,14 +418,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EF04A20E209C2E3400AEEF88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF04A20F209C2E3400AEEF88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF04A213209C2E3900AEEF88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -431,9 +541,13 @@
 		};
 		EF04A232209C2E3900AEEF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5E28B958B34CC370DCBE34A /* Pods-SYTableViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T99T39TS8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SYTableViewDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SYTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +561,13 @@
 		};
 		EF04A233209C2E3900AEEF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAA8909A495E63508F862B7B /* Pods-SYTableViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T99T39TS8;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SYTableViewDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = SYTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

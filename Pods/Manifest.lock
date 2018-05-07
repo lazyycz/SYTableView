@@ -1,0 +1,22 @@
+PODS:
+  - Masonry (1.1.0)
+  - UIUtility (1.1.2):
+    - UIUtility/Categories (= 1.1.2)
+  - UIUtility/Categories (1.1.2)
+
+DEPENDENCIES:
+  - Masonry (= 1.1.0)
+  - UIUtility
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - UIUtility
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  UIUtility: 2b9cb9ee98bede946097274a10eb8eee5788ba58
+
+PODFILE CHECKSUM: ea3968fb1c01c31ef98973f3b8d9270bca36e1b6
+
+COCOAPODS: 1.5.0
