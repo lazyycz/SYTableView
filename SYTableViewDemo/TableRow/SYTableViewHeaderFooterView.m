@@ -80,7 +80,7 @@
     return YES;
 }
 
-+ (CGFloat)viewHeightWithTableView:(UITableView *)tableView viewType:(SYTableViewHeaderFooterViewType)viewType tableRow:(SYTableRow *)tableRow;
++ (CGFloat)headerViewHeightWithTableView:(UITableView *)tableView tableRow:(SYTableRow *)tableRow
 {
     if (tableRow.rowHeihgt > 0) {
         return tableRow.rowHeihgt;
@@ -88,36 +88,56 @@
     
     CGFloat height = CGFLOAT_MIN;
     
-    // 根据内容自动适应cell的高度
-    if ([tableRow autoAdjustCellHeight]) {
-        SYTableViewHeaderFooterView *view = [SYTableViewHeaderFooterView initViewWithTableView:tableView viewName:tableRow.rowName];
-        [view reloadViewWithContent:tableRow];
-        
-        UIView *layoutGuideView = view;
-        
-        [layoutGuideView setNeedsUpdateConstraints];
-        [layoutGuideView updateConstraintsIfNeeded];
-        
-        layoutGuideView.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(layoutGuideView.bounds));
-        
-        [layoutGuideView setNeedsLayout];
-        [layoutGuideView layoutIfNeeded];
-        
-        height = [((UITableViewHeaderFooterView *)layoutGuideView).contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-        height += 1.0f;
+    if (tableRow.autoAdjustRowHeight) {
+        height = [self autoAdjustViewHeightWithTableView:tableView tableRow:tableRow];
     }
-    else if (viewType == SYTableViewHeaderFooterViewTypeHeader) {
-        if ([tableRow.delegate respondsToSelector:@selector(tableRowHeaderHeightWithContent:)]) {
-            height = [tableRow.delegate tableRowHeaderHeightWithContent:tableRow.content];
-        }
-    }
-    else if (viewType == SYTableViewHeaderFooterViewTypeFooter) {
-        if ([tableRow.delegate respondsToSelector:@selector(tableRowFooterHeightWithContent:)]) {
-            height = [tableRow.delegate tableRowFooterHeightWithContent:tableRow.content];
-        }
+    else if ([tableRow.delegate respondsToSelector:@selector(tableRowHeaderHeightWithContent:)]) {
+        height = [tableRow.delegate tableRowHeaderHeightWithContent:tableRow.content];
     }
     
     return tableRow.rowHeihgt = height;
+}
+
++ (CGFloat)footerViewHeightWithTableView:(UITableView *)tableView tableRow:(SYTableRow *)tableRow
+{
+    if (tableRow.rowHeihgt > 0) {
+        return tableRow.rowHeihgt;
+    }
+    
+    CGFloat height = CGFLOAT_MIN;
+    
+    if (tableRow.autoAdjustRowHeight) {
+        height = [self autoAdjustViewHeightWithTableView:tableView tableRow:tableRow];
+    }
+    else if ([tableRow.delegate respondsToSelector:@selector(tableRowFooterHeightWithContent:)]) {
+            height = [tableRow.delegate tableRowFooterHeightWithContent:tableRow.content];
+        }
+    
+    return tableRow.rowHeihgt = height;
+}
+
++ (CGFloat)autoAdjustViewHeightWithTableView:(UITableView *)tableView tableRow:(SYTableRow *)tableRow
+{
+    CGFloat height = CGFLOAT_MIN;
+    
+    // 根据内容自动适应cell的高度
+    SYTableViewHeaderFooterView *view = [SYTableViewHeaderFooterView initViewWithTableView:tableView viewName:tableRow.rowName];
+    [view reloadViewWithContent:tableRow];
+    
+    UIView *layoutGuideView = view;
+    
+    [layoutGuideView setNeedsUpdateConstraints];
+    [layoutGuideView updateConstraintsIfNeeded];
+    
+    layoutGuideView.bounds = CGRectMake(0.0f, 0.0f, CGRectGetWidth(tableView.bounds), CGRectGetHeight(layoutGuideView.bounds));
+    
+    [layoutGuideView setNeedsLayout];
+    [layoutGuideView layoutIfNeeded];
+    
+    height = [((UITableViewHeaderFooterView *)layoutGuideView).contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    height += 1.0f;
+    
+    return height;
 }
 
 @end

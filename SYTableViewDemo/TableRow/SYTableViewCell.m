@@ -90,7 +90,7 @@
     CGFloat height = CGFLOAT_MIN;
     
     // 根据内容自动适应cell的高度
-    if ([tableRow autoAdjustCellHeight]) {
+    if ([tableRow autoAdjustRowHeight]) {
         SYTableViewCell *cell = [SYTableViewCell initCellWithTableView:tableView cellName:tableRow.rowName];
         [cell reloadCellWithContent:tableRow];
         

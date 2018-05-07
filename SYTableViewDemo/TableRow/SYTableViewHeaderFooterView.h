@@ -9,11 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "SYTableRow.h"
 
-typedef NS_ENUM(NSInteger, SYTableViewHeaderFooterViewType) {
-    SYTableViewHeaderFooterViewTypeHeader       = 0,
-    SYTableViewHeaderFooterViewTypeFooter,
-};
-
 @interface SYTableViewHeaderFooterView : UITableViewHeaderFooterView
 
 @property (nonatomic, assign, readonly) CGFloat viewHeihgt;
@@ -31,6 +26,7 @@ typedef NS_ENUM(NSInteger, SYTableViewHeaderFooterViewType) {
 - (void)initView;
 - (BOOL)reloadViewWithContent:(__kindof SYTableRow *)row;
 
-+ (CGFloat)viewHeightWithTableView:(UITableView *)tableView viewType:(SYTableViewHeaderFooterViewType)viewType tableRow:(SYTableRow *)tableRow;
++ (CGFloat)headerViewHeightWithTableView:(UITableView *)tableView tableRow:(SYTableRow *)tableRow;
++ (CGFloat)footerViewHeightWithTableView:(UITableView *)tableView tableRow:(SYTableRow *)tableRow;
 
 @end

@@ -54,8 +54,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return [SYTableViewHeaderFooterView viewHeightWithTableView:tableView
-                                                       viewType:SYTableViewHeaderFooterViewTypeHeader
+    return [SYTableViewHeaderFooterView headerViewHeightWithTableView:tableView
                                                        tableRow:[self.dataFactory fetcheHeaderRowWithSection:section]];
 }
 

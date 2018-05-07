@@ -45,15 +45,15 @@
     cellModel1.descText = @"Conference Center in the hamlet of Leedsville. Connecticut Route 343 passes through more rural and residential areas into the town of Sharon, Connecticut, where it terminates at a junction with Route 4 and Route 41. (Full article...)";
     
     SYTableViewControllerRow *row = [[SYTableViewControllerRow alloc] initWithRowContent:cellModel rowName:@"SYStoreInfoTableViewCell" rowTag:SYTableViewControllerRowTypeStoreInfo];
-    row.autoAdjustCellHeight = YES;
+    row.autoAdjustRowHeight = YES;
     
     SYTableViewControllerRow *row1 = [[SYTableViewControllerRow alloc] initWithRowContent:cellModel1 rowName:@"SYStoreInfoTableViewCell" rowTag:SYTableViewControllerRowTypeStoreInfo];
-    row1.autoAdjustCellHeight = YES;
+    row1.autoAdjustRowHeight = YES;
     
     [self.cellRows addObject:@[row, row1, row, row, row1, row1]];
     
     SYTableViewControllerRow *headerRow = [[SYTableViewControllerRow alloc] initWithRowContent:@"New York State Route 343 (NY 343) is a state highway in Dutchess County, in the Hudson Valley of the U.S. state of New York" rowName:@"SYStoreInfoTableViewHeaderView" rowTag:SYTableViewControllerRowTypeStoreInfo];
-    headerRow.autoAdjustCellHeight = YES;
+    headerRow.autoAdjustRowHeight = YES;
     [self.headerRows addObject:headerRow];
 }
 
@@ -63,7 +63,7 @@
     [self.cellRows addObject:@[row]];
     
     SYTableViewControllerRow *headerRow = [[SYTableViewControllerRow alloc] initWithRowContent:@"New York State Route 343 (NY 343)" rowName:@"SYGoodsInfoTableViewHeaderView" rowTag:SYTableViewControllerRowTypeGoodsInfo];
-    headerRow.autoAdjustCellHeight = YES;
+    headerRow.autoAdjustRowHeight = YES;
     [self.headerRows addObject:headerRow];
 }
 

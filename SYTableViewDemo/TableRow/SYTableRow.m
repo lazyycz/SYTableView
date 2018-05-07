@@ -28,7 +28,7 @@
         _rowName = name;
         _rowTag = tag;
         _rowHeihgt = 0.0f;
-        _autoAdjustCellHeight = NO;
+        _autoAdjustRowHeight = NO;
         
         if (delegate && [delegate conformsToProtocol:@protocol(SYTableRowHeihgtDelegate)]) {
             _delegate = delegate;

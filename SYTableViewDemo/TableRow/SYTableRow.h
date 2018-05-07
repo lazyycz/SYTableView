@@ -18,7 +18,7 @@
 @property (nonatomic, assign) NSInteger rowTag;
 @property (nonatomic, weak) id <SYTableRowHeihgtDelegate> delegate;
 
-@property (nonatomic, assign) BOOL autoAdjustCellHeight;
+@property (nonatomic, assign) BOOL autoAdjustRowHeight;
 @property (nonatomic, assign) CGFloat rowHeihgt;
 
 - (instancetype)initWithRowContent:(id)content rowName:(NSString *)name;
