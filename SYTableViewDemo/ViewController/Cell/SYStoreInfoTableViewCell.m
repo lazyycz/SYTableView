@@ -12,20 +12,13 @@
 
 @end
 
-@interface SYStoreInfoTableViewCell ()
+@interface SYStoreInfoTableViewCell () <SYTableViewCellDelegate>
 
 @property (nonatomic, strong) UILabel *descLabel;
 
 @end
 
 @implementation SYStoreInfoTableViewCell
-
-- (void)initCell
-{
-    [super initCell];
-    [self addPageSubviews];
-    [self makeConstraints];
-}
 
 - (void)addPageSubviews
 {
@@ -37,7 +30,7 @@
     })];
 }
 
-- (void)makeConstraints
+- (void)layoutPageSubviews
 {
     [self.descLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(15);

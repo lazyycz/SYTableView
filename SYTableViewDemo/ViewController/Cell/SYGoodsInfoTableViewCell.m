@@ -8,7 +8,7 @@
 
 #import "SYGoodsInfoTableViewCell.h"
 
-@interface SYGoodsInfoTableViewCell ()
+@interface SYGoodsInfoTableViewCell () <SYTableViewCellDelegate>
 
 @property (nonatomic, strong) UIView *leftView;
 @property (nonatomic, strong) UIView *rightView;
@@ -16,16 +16,6 @@
 @end
 
 @implementation SYGoodsInfoTableViewCell
-
-- (void)initCell
-{
-    [super initCell];
-    
-    self.selectionStyle = UITableViewCellSelectionStyleNone;
-    
-    [self addPageSubviews];
-    [self makeConstraints];
-}
 
 - (void)addPageSubviews
 {
@@ -42,7 +32,7 @@
     })];
 }
 
-- (void)makeConstraints
+- (void)layoutPageSubviews
 {
     [self.leftView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.width.equalTo(self.rightView);

@@ -59,12 +59,26 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-        [self initCell];
+        [self setupDelegata];
     }
     return self;
 }
 
-- (void)initCell { }
+- (void)setupDelegata
+{
+    if ([self conformsToProtocol:@protocol(SYTableViewCellDelegate)]) {
+        __weak typeof((id <SYTableViewCellDelegate>) self) delegate = (id <SYTableViewCellDelegate>)self;
+        if ([delegate respondsToSelector:@selector(setupPageView)]) {
+            [delegate setupPageView];
+        }
+        if ([delegate respondsToSelector:@selector(addPageSubviews)]) {
+            [delegate addPageSubviews];
+        }
+        if ([delegate respondsToSelector:@selector(layoutPageSubviews)]) {
+            [delegate layoutPageSubviews];
+        }
+    }
+}
 
 - (BOOL)reloadCellWithContent:(__kindof SYTableRow *)row
 {

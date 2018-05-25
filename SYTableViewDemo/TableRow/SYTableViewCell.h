@@ -19,9 +19,18 @@
 + (instancetype)initCellWithTableView:(UITableView *)tableView cellName:(NSString *)name;
 + (instancetype)initCellWithTableView:(UITableView *)tableView cellName:(NSString *)name delegate:(__weak id)delegate;
 
-- (void)initCell;
 - (BOOL)reloadCellWithContent:(__kindof SYTableRow *)row;
 
 + (CGFloat)cellHeightWithTableView:(UITableView *)tableView tableRow:(SYTableRow *)tableRow;
+
+@end
+
+@protocol SYTableViewCellDelegate <NSObject>
+
+@optional
+
+- (void)setupPageView;
+- (void)addPageSubviews;
+- (void)layoutPageSubviews;
 
 @end
