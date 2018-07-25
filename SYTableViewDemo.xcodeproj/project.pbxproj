@@ -24,6 +24,7 @@
 		EF04A28C209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A28B209FF95900AEEF88 /* SYGoodsInfoTableViewCell.m */; };
 		EF04A28F20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A28E20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m */; };
 		EF04A29220A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF04A29120A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m */; };
+		EF4D43A32107282200411D53 /* UIResponder+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4D43A22107282200411D53 /* UIResponder+Router.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		EF04A28E20A02AAF00AEEF88 /* SYStoreInfoTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYStoreInfoTableViewHeaderView.m; sourceTree = "<group>"; };
 		EF04A29020A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SYGoodsInfoTableViewHeaderView.h; sourceTree = "<group>"; };
 		EF04A29120A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SYGoodsInfoTableViewHeaderView.m; sourceTree = "<group>"; };
+		EF4D43A12107282200411D53 /* UIResponder+Router.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Router.h"; sourceTree = "<group>"; };
+		EF4D43A22107282200411D53 /* UIResponder+Router.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Router.m"; sourceTree = "<group>"; };
 		F5E28B958B34CC370DCBE34A /* Pods-SYTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYTableViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYTableViewDemo/Pods-SYTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,6 +180,8 @@
 				EF04A243209C2FFA00AEEF88 /* SYTableViewController.m */,
 				EF04A254209C58D500AEEF88 /* SYTableViewControllerDataFactory.h */,
 				EF04A255209C58D500AEEF88 /* SYTableViewControllerDataFactory.m */,
+				EF4D43A12107282200411D53 /* UIResponder+Router.h */,
+				EF4D43A22107282200411D53 /* UIResponder+Router.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -381,6 +386,7 @@
 				EF04A245209C2FFA00AEEF88 /* SYTableViewController.m in Sources */,
 				EF04A250209C3C0300AEEF88 /* SYTableViewCell.m in Sources */,
 				EF04A218209C2E3900AEEF88 /* main.m in Sources */,
+				EF4D43A32107282200411D53 /* UIResponder+Router.m in Sources */,
 				EF04A29220A035E900AEEF88 /* SYGoodsInfoTableViewHeaderView.m in Sources */,
 				EF04A256209C58D500AEEF88 /* SYTableViewControllerDataFactory.m in Sources */,
 				EF04A20A209C2E3400AEEF88 /* AppDelegate.m in Sources */,

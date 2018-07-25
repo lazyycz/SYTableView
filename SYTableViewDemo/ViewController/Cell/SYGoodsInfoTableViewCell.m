@@ -7,11 +7,15 @@
 //
 
 #import "SYGoodsInfoTableViewCell.h"
+#import "UIResponder+Router.h"
+
+NSString * const kSYGoodsInfoTableViewCellLeftButtonClicked = @"SYGoodsInfoTableViewCellLeftButtonClicked";
+NSString * const kSYGoodsInfoTableViewCellRightButtonClicked = @"SYGoodsInfoTableViewCellRightButtonClicked";
 
 @interface SYGoodsInfoTableViewCell () <SYTableViewCellDelegate>
 
-@property (nonatomic, strong) UIView *leftView;
-@property (nonatomic, strong) UIView *rightView;
+@property (nonatomic, strong) UIButton *leftView;
+@property (nonatomic, strong) UIButton *rightView;
 
 @end
 
@@ -20,14 +24,16 @@
 - (void)addPageSubviews
 {
     [self.contentView addSubview:({
-        self.leftView = [UIView new];
+        self.leftView = [UIButton new];
         self.leftView.backgroundColor = [UIColor redColor];
+        [self.leftView addTarget:self action:@selector(leftButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         self.leftView;
     })];
     
     [self.contentView addSubview:({
-        self.rightView = [UIView new];
+        self.rightView = [UIButton new];
         self.rightView.backgroundColor = [UIColor greenColor];
+        [self.rightView addTarget:self action:@selector(rightButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         self.rightView;
     })];
 }
@@ -50,6 +56,16 @@
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
+}
+
+- (void)leftButtonClicked:(UIButton *)button
+{
+    [button routerEventWithName:kSYGoodsInfoTableViewCellLeftButtonClicked object:@{@"title" : @"leftButton"}];
+}
+
+- (void)rightButtonClicked:(UIButton *)button
+{
+    [button routerEventWithName:kSYGoodsInfoTableViewCellRightButtonClicked object:@{@"title" : @"rightButton"}];
 }
 
 @end

@@ -10,6 +10,10 @@
 #import "SYTableViewControllerDataFactory.h"
 #import "SYTableViewCell.h"
 #import "SYTableViewHeaderFooterView.h"
+#import "UIResponder+Router.h"
+
+extern NSString *const kSYGoodsInfoTableViewCellLeftButtonClicked;
+extern NSString *const kSYGoodsInfoTableViewCellRightButtonClicked;
 
 @interface SYTableViewController ()
 
@@ -30,10 +34,36 @@
         __strong typeof(weakSelf) strongSelf = weakSelf;
         [strongSelf.tableView reloadData];
     }];
+    
+    [self addUserEvent];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+#pragma mark - user event
+
+- (void)addUserEvent
+{
+    NSDictionary <NSString *, NSString *>*enventStrategy = @{
+                                                             kSYGoodsInfoTableViewCellLeftButtonClicked : NSStringFromSelector(@selector(didClickLeftButtonEvent:)),
+                                                             kSYGoodsInfoTableViewCellRightButtonClicked : NSStringFromSelector(@selector(didClickRightButtonEvent:)),
+                                     };
+    
+    [enventStrategy enumerateKeysAndObjectsUsingBlock:^(NSString * _Nonnull key, NSString * _Nonnull obj, BOOL * _Nonnull stop) {
+        [self addEventWithName:key selector:NSSelectorFromString(obj)];
+    }];
+}
+
+- (void)didClickLeftButtonEvent:(id)anObject
+{
+    NSLog(@"%@, %@", NSStringFromSelector(_cmd), anObject);
+}
+
+- (void)didClickRightButtonEvent:(id)anObject
+{
+    NSLog(@"%@, %@", NSStringFromSelector(_cmd), anObject);
 }
 
 #pragma mark - Table view data source
@@ -87,6 +117,8 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
+#pragma mark - getter
 
 - (SYTableViewControllerDataFactory *)dataFactory
 {

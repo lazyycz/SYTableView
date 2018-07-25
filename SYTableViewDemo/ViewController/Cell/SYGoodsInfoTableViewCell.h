@@ -8,6 +8,9 @@
 
 #import "SYTableViewCell.h"
 
+extern NSString *const kSYGoodsInfoTableViewCellLeftButtonClicked;
+extern NSString *const kSYGoodsInfoTableViewCellRightButtonClicked;
+
 @interface SYGoodsInfoTableViewCell : SYTableViewCell
 
 @end
