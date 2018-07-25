@@ -84,6 +84,10 @@ static char *kEventStrategy = "EventStrategy";
 
 /* ------------------------ 华丽的分割线 ------------------------ */
 
+@interface UIViewController (Router)
+
+@end
+
 @implementation UIViewController (Router)
 
 - (void)routerEventWithIdentifier:(NSInteger)identifier object:(nullable id)anObject

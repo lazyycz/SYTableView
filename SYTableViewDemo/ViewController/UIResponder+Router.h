@@ -17,7 +17,3 @@
 - (void)routerEventWithName:(NSString *)eventName object:(nullable id)anObject;
 
 @end
-
-@interface UIViewController (Router)
-
-@end
